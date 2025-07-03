@@ -72,7 +72,7 @@ service cloud.firestore {
 - **Real-time**: UI updates instantly as data changes
 
 ## 👤 Credits
-Built by [Your Name].
+Built by Sudarshan.
 
 ---
 
