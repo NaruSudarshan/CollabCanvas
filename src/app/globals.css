@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 213 33% 97%; /* Light Gray #F0F4F8 */
+    --foreground: 222 22% 15%; /* Dark Gray #1A202C */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 222 22% 15%; /* Dark Gray */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 222 22% 15%; /* Dark Gray */
+    --primary: 207 88% 68%; /* Soft Blue #64B5F6 */
+    --primary-foreground: 0 0% 100%; /* White */
+    --secondary: 215 20% 90%; /* Light Slate #E2E8F0 */
+    --secondary-foreground: 215 16% 34%; /* Cool Gray #4A5568 */
+    --muted: 215 20% 80%; /* Slate #CBD5E0 */
+    --muted-foreground: 215 14% 50%; /* Cool Gray #718096 */
+    --accent: 33 100% 65%; /* Warm Orange #FFB74D */
+    --accent-foreground: 27 100% 13%; /* Dark Brown #422000 */
+    --destructive: 0 72% 59%; /* Red #E53E3E */
+    --destructive-foreground: 0 0% 100%; /* White */
+    --border: 210 14% 83%; /* Light Gray #D1D5DB */
+    --input: 210 17% 93%; /* Lighter Gray #E5E7EB */
+    --ring: 207 88% 68%; /* Soft Blue #64B5F6 */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors, can be adjusted or inherit from main theme */
+    --sidebar-background: 0 0% 100%; /* White, for contrast with main light gray */
+    --sidebar-foreground: 222 22% 15%; /* Dark Gray, same as main */
+    --sidebar-primary: 207 88% 68%; /* Soft Blue, same as main */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 33 100% 65%; /* Warm Orange, same as main */
+    --sidebar-accent-foreground: 27 100% 13%; /* Dark Brown */
+    --sidebar-border: 210 14% 89%; /* Slightly lighter border for sidebar */
+    --sidebar-ring: 207 88% 68%; /* Soft Blue */
+  }
+
+  .dark {
+    --background: 222 22% 15%; /* Dark Gray #1A202C */
+    --foreground: 213 33% 97%; /* Light Gray #F0F4F8 */
+    --card: 222 22% 12%; /* Darker Gray */
+    --card-foreground: 213 33% 97%;
+    --popover: 222 22% 12%;
+    --popover-foreground: 213 33% 97%;
+    --primary: 207 88% 68%; /* Soft Blue */
+    --primary-foreground: 222 22% 10%; /* Darker for contrast */
+    --secondary: 215 16% 34%; /* Cool Gray #4A5568 */
+    --secondary-foreground: 213 33% 97%;
+    --muted: 215 16% 25%; /* Darker Muted */
+    --muted-foreground: 215 14% 60%;
+    --accent: 33 100% 65%; /* Warm Orange */
+    --accent-foreground: 27 100% 13%; /* Dark Brown for contrast */
+    --destructive: 0 63% 51%; /* Darker Red */
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 16% 34%; /* Cool Gray */
+    --input: 215 16% 28%; /* Darker Input */
+    --ring: 207 88% 68%; /* Soft Blue */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    --sidebar-background: 222 22% 12%; /* Darker Gray for sidebar */
+    --sidebar-foreground: 213 33% 97%; /* Light Gray */
+    --sidebar-primary: 207 88% 68%; /* Soft Blue */
+    --sidebar-primary-foreground: 222 22% 10%;
+    --sidebar-accent: 33 100% 65%; /* Warm Orange */
+    --sidebar-accent-foreground: 27 100% 13%;
+    --sidebar-border: 215 16% 20%; /* Darker border for sidebar */
+    --sidebar-ring: 207 88% 68%; /* Soft Blue */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
